@@ -67,7 +67,7 @@ class Server:
         except IndexError:
             return []
 
-    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict[str, int]:
         """
         Retrieve hyperlinks for a specified page of data.
 
