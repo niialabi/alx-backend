@@ -9,7 +9,7 @@ class BasicCache(BaseCaching):
 
     def __init__(self):
         """ Instantiation """
-        self.cache_data
+        self.cache_data = {}
 
     def put(self, key, item):
         """ Add an item in the cache """
