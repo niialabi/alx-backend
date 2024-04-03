@@ -16,12 +16,12 @@ class FIFOCache(BaseCaching):
             self.cache_data[key] = item
             if len(self.cache_data) > BaseCaching.MAX_ITEMS:
                 first_item = next(iter(self.cache_data))
-                print(f'discard: {first_item}')
+                print(f'DISCARD: {first_item}')
                 self.cache_data.pop(first_item)
                 self.cache_data[key] = item
 
     def get(self, key):
-        """ returns the value in cache_data[key] """
+        """ returns the/a value in cache_data[key] """
         if not key:
             return None
         else:
