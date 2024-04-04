@@ -5,7 +5,7 @@ from base_caching import BaseCaching
 
 
 class MRUCache(BaseCaching):
-    """ MRU caching system that inherits from BaseCaching."""
+    """ MRU caching implementation."""
 
     def __init__(self):
         """ Initialization """
@@ -25,7 +25,7 @@ class MRUCache(BaseCaching):
                     self.keys_list.append(key)
 
     def get(self, key):
-        """Retrieves an item from the cache."""
+        """ Retrieves item from cache """
         item = self.cache_data.get(key, None)
         if item:
             self.keys_list.remove(key)
