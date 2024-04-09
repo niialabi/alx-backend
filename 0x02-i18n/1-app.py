@@ -7,7 +7,7 @@ app = Flask(__name__)
 babel = Babel(app)
 
 
-class Config():
+class Config:
     """ Config class """
 
     LANGUAGES = ["en", "fr"]
