@@ -6,4 +6,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
+    """ renders default index page via template """
     return render_template('0-index.html')
